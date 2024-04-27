@@ -1,1 +1,2 @@
 # stlhack-MicroSure
+Decentralized microinsurance
