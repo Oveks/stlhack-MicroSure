@@ -2,28 +2,34 @@ import React from 'react';
 import './App.css';
 import logo from './Logo.svg';
 import video from './group.mp4';
+import { useState } from 'react';
 
 // Header component
 const Header = () => {
   return (
     <header>
       <img src={logo} alt="My Image" className="left-aligned" />
-      <h1>MicroSured</h1>
+      <h1>MicroInsured</h1>
     </header>
   );
 };
 
 // Main content component
 const MainContent = () => {
-  return (
-    <main class = 'background-image'>
-        <section class = "quote">
-          <h3>Step into the future of travel protection with MicroSured. Shield 
+  const [whichTab, setWhichTab ] = useState(1)
+  return ( 
+    <main className = 'background-image'>      
+    <nav><a onClick={()=>setWhichTab(1)}>Home</a> <a onClick={()=>setWhichTab(2)}>Video</a></nav>
+        {whichTab == 1 ?
+          <section className = "quote">
+          <h3>Step into the future of travel protection with MicroInsured. Shield 
             your flights against delays, soaring seamlessly into tomorrow.</h3>
-        </section>
-        <section class = 'video-container'>
-          <video class = 'video' src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
-        </section>
+          </section>
+        :
+          <section className = 'video-container'>
+            <video className = 'video' src={video} width = '600' height = '400' controls = 'control' autoPlay={true} />
+          </section>
+          }
     </main>
   );
 };
@@ -32,7 +38,7 @@ const MainContent = () => {
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 MicroSured. All rights reserved.</p>
+      <p>&copy; 2024 MicroInsured. All rights reserved.</p>
     </footer>
   );
 };
