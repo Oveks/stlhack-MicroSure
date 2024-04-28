@@ -11,9 +11,9 @@ body {
 }
 
 header {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 0;
   margin-bottom: 0;
   text-align: center;
   top: 0;
@@ -34,7 +34,8 @@ header h1 {
   flex: 1 1 auto;
   margin-right: 20vh;
   padding: 10px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-size: 48px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 main {
@@ -48,6 +49,7 @@ main {
   background-color: #000;
   padding: 15vh;
   font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .background-image {
