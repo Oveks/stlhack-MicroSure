@@ -1,5 +1,5 @@
-var Election = artifacts.require("./Election.sol");
+var FlightDelay = artifacts.require("./FlightDelay.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Election);
+  deployer.deploy(FlightDelay);
 };
