@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.42.25;
+pragma solidity 0.4.25;
 
 contract FlightDelayInsurance {
     struct Insurance {
@@ -16,7 +16,7 @@ contract FlightDelayInsurance {
     event InsurancePurchased(address indexed user, string airline, string flightNumber, uint256 date, uint256 premium);
     event Payout(address indexed user, uint256 amount);
 
-    function purchaseInsurance(string memory _airline, string memory _flightNumber, uint256 _date) external payable {
+    function purchaseInsurance(string _airline, string _flightNumber, uint256 _date) external payable {
         require(msg.value > 0, "Premium must be greater than 0");
         
         Insurance memory newInsurance = Insurance({
@@ -43,7 +43,7 @@ contract FlightDelayInsurance {
 
         if (flightDelayed) {
             // Payout insurance amount
-            payable(msg.sender).transfer(insurance.premium * 5);
+            msg.sender.transfer(insurance.premium * 5);
             insurance.paidOut = true;
 
             emit Payout(msg.sender, insurance.premium);
