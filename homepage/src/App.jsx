@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './Logo.svg';
+import video from './group.mp4';
 
 // Header component
 const Header = () => {
@@ -19,6 +20,9 @@ const MainContent = () => {
         <section class = "quote">
           <h3>Step into the future of travel protection with MicroSured. Shield 
             your flights against delays, soaring seamlessly into tomorrow.</h3>
+        </section>
+        <section class = 'video'>
+          <video src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
         </section>
     </main>
   );
