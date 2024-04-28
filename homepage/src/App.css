@@ -1,5 +1,4 @@
 /* App.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,23 +11,30 @@ body {
 }
 
 header {
-  background-color: #000; /* Black background color */
+  background-color: #000;
   color: #fff;
-  padding: 20px 0; /* Add padding for the header */
+  padding: 20px 0;
   margin-bottom: 0;
   text-align: center;
-  position: fixed; /* Fix the header position */
-  top: 0; /* Position the header at the top */
-  width: 100%; /* Ensure header spans the full width */
-  z-index: 1000; /* Set a high z-index to ensure it's on top of other content */
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-aligned {
+  justify-content: left;
+  margin-right: 20px;
+  width: 20vh;
+  height: auto;
 }
 
 header h1 {
-  margin: 0;
-}
-
-.content-wrapper {
-  padding-top: 60px; /* Add padding to content to accommodate fixed header */
+  flex: 1 1 auto;
+  margin-right: 20vh;
+  padding: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 main {
@@ -36,11 +42,19 @@ main {
   background-color: #ffe;
 }
 
-section {
+.quote {
   margin-top: 0;
   margin-bottom: 70vh;
   background-color: #000;
-  padding: 20vh;
+  padding: 15vh;
+  font-size: 30px;
+}
+
+.background-image {
+  background-image: url('./Background.png');
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 auto;
 }
 
 section h2 {

@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import logo from './Logo.svg';
 
 // Header component
 const Header = () => {
   return (
     <header>
-      <nav>MicroSured</nav>
+      <img src={logo} alt="My Image" className="left-aligned" />
+      <h1>MicroSured</h1>
     </header>
   );
 };
@@ -13,11 +15,11 @@ const Header = () => {
 // Main content component
 const MainContent = () => {
   return (
-    <main>
-      <section>
-        <h3>Step into the future of travel protection with MicroSured. Shield 
-          your flights against delays, soaring seamlessly into tomorrow.</h3>
-      </section>
+    <main class = 'background-image'>
+        <section class = "quote">
+          <h3>Step into the future of travel protection with MicroSured. Shield 
+            your flights against delays, soaring seamlessly into tomorrow.</h3>
+        </section>
     </main>
   );
 };
@@ -36,12 +38,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="content-wrapper">
-        <div className="left-side">
-          <MainContent />
-        </div>
-        <div className="right-side"></div>
-      </div>
+      <MainContent />
       <Footer />
     </div>
   );
