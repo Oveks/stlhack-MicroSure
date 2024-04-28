@@ -1,5 +1,3 @@
-import './App.css'
-
 import React from 'react';
 import './App.css';
 
@@ -7,7 +5,7 @@ import './App.css';
 const Header = () => {
   return (
     <header>
-      <h1>Welcome to My Website</h1>
+      <nav>MicroSured</nav>
     </header>
   );
 };
@@ -17,21 +15,8 @@ const MainContent = () => {
   return (
     <main>
       <section>
-        <h2>About Us</h2>
-        <p>This is a generic webpage built with React.</p>
-      </section>
-      <section>
-        <h2>Services</h2>
-        <ul>
-          <li>Web Development</li>
-          <li>Graphic Design</li>
-          <li>Content Creation</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Contact Us</h2>
-        <p>Email: info@example.com</p>
-        <p>Phone: 123-456-7890</p>
+        <h3>Step into the future of travel protection with MicroSured. Shield 
+          your flights against delays, soaring seamlessly into tomorrow.</h3>
       </section>
     </main>
   );
@@ -41,7 +26,7 @@ const MainContent = () => {
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 My Website. All rights reserved.</p>
+      <p>&copy; 2024 MicroSured. All rights reserved.</p>
     </footer>
   );
 };
@@ -51,7 +36,12 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <MainContent />
+      <div className="content-wrapper">
+        <div className="left-side">
+          <MainContent />
+        </div>
+        <div className="right-side"></div>
+      </div>
       <Footer />
     </div>
   );
