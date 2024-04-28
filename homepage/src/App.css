@@ -22,6 +22,22 @@ header {
   justify-content: space-between;
 }
 
+nav {
+  background-color: #ffffff;
+  color: #5b5fbf;
+  padding-bottom: 10px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  color: blue;
+}
+
 .left-aligned {
   justify-content: left;
   margin-right: 20px;
