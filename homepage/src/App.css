@@ -45,14 +45,14 @@ main {
 .quote {
   margin-top: 0;
   background-color: #00000080;
-  padding: 15vh;
+  padding: 1vh;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .video-container {
   display: flex;
-  margin: 10vh;
+  margin: 2vh 40vh;
 }
 
 .video {

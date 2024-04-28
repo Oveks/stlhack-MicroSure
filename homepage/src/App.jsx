@@ -19,16 +19,23 @@ const MainContent = () => {
   const [whichTab, setWhichTab ] = useState(1)
   return ( 
     <main className = 'background-image'>      
-    <nav><a onClick={()=>setWhichTab(1)}>Home</a> <a onClick={()=>setWhichTab(2)}>Video</a></nav>
+    <nav><a onClick={()=>setWhichTab(1)}>Home</a> <a onClick={()=>setWhichTab(2)}>Insurance</a></nav>
         {whichTab == 1 ?
+        <div>
           <section className = "quote">
           <h3>Step into the future of travel protection with MicroInsured. Shield 
             your flights against delays, soaring seamlessly into tomorrow.</h3>
           </section>
-        :
           <section className = 'video-container'>
-            <video className = 'video' src={video} width = '600' height = '400' controls = 'control' autoPlay={true} />
+          <video className = 'video' src={video} width = '600' height = '400' controls = 'control' autoPlay={true} />
           </section>
+        </div>
+        :
+        <div>
+          <section>
+
+          </section>
+        </div>
           }
     </main>
   );
