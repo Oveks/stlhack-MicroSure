@@ -21,8 +21,8 @@ const MainContent = () => {
           <h3>Step into the future of travel protection with MicroSured. Shield 
             your flights against delays, soaring seamlessly into tomorrow.</h3>
         </section>
-        <section class = 'video'>
-          <video src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
+        <section class = 'video-container'>
+          <video classname = 'video' src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
         </section>
     </main>
   );
