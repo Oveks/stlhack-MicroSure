@@ -22,7 +22,7 @@ const MainContent = () => {
             your flights against delays, soaring seamlessly into tomorrow.</h3>
         </section>
         <section class = 'video-container'>
-          <video classname = 'video' src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
+          <video class = 'video' src={video} width = '600' height = '400' controls = 'control' autoplay="true" />
         </section>
     </main>
   );
